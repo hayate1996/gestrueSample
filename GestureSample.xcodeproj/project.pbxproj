@@ -13,6 +13,8 @@
 		F91E47CE1A6CB78C0073AD30 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91E47CD1A6CB78C0073AD30 /* Images.xcassets */; };
 		F91E47D11A6CB78C0073AD30 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F91E47CF1A6CB78C0073AD30 /* LaunchScreen.xib */; };
 		F91E47DD1A6CB78C0073AD30 /* GestureSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91E47DC1A6CB78C0073AD30 /* GestureSampleTests.swift */; };
+		F91E47E91A6CD2370073AD30 /* FigureObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91E47E81A6CD2370073AD30 /* FigureObjectManager.swift */; };
+		F91E47EB1A6CD2640073AD30 /* FigureObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91E47EA1A6CD2640073AD30 /* FigureObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		F91E47D61A6CB78C0073AD30 /* GestureSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GestureSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F91E47DB1A6CB78C0073AD30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F91E47DC1A6CB78C0073AD30 /* GestureSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureSampleTests.swift; sourceTree = "<group>"; };
+		F91E47E81A6CD2370073AD30 /* FigureObjectManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FigureObjectManager.swift; sourceTree = "<group>"; };
+		F91E47EA1A6CD2640073AD30 /* FigureObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FigureObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		F91E47C31A6CB78C0073AD30 /* GestureSample */ = {
 			isa = PBXGroup;
 			children = (
+				F91E47EC1A6CD29B0073AD30 /* Figure */,
 				F91E47C61A6CB78C0073AD30 /* AppDelegate.swift */,
 				F91E47C81A6CB78C0073AD30 /* ViewController.swift */,
 				F91E47CA1A6CB78C0073AD30 /* Main.storyboard */,
@@ -110,6 +115,15 @@
 				F91E47DB1A6CB78C0073AD30 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F91E47EC1A6CD29B0073AD30 /* Figure */ = {
+			isa = PBXGroup;
+			children = (
+				F91E47E81A6CD2370073AD30 /* FigureObjectManager.swift */,
+				F91E47EA1A6CD2640073AD30 /* FigureObject.swift */,
+			);
+			name = Figure;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +175,7 @@
 				TargetAttributes = {
 					F91E47C01A6CB78C0073AD30 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 5V5JNQM6P4;
 					};
 					F91E47D51A6CB78C0073AD30 = {
 						CreatedOnToolsVersion = 6.1;
@@ -213,6 +228,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F91E47C91A6CB78C0073AD30 /* ViewController.swift in Sources */,
+				F91E47E91A6CD2370073AD30 /* FigureObjectManager.swift in Sources */,
+				F91E47EB1A6CD2640073AD30 /* FigureObject.swift in Sources */,
 				F91E47C71A6CB78C0073AD30 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,9 +355,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = GestureSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -348,9 +368,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = GestureSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

@@ -8,18 +8,29 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIGestureRecognizerDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.addGestureRecognizers()
+        
+        var figure1 = FigureObject(frame: CGRectMake(100, 100, 100, 100))
+        self.view.addSubview(figure1)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
-
+    func addGestureRecognizers() {
+        var tapGesture = UITapGestureRecognizer(target: self, action: Selector("tappedAction"))
+        self.view.addGestureRecognizer(tapGesture)
+    }
+    
+    func tappedAction(){
+        
+    }
+    
 }
 
