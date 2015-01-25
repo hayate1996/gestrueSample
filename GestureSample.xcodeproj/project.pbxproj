@@ -15,6 +15,8 @@
 		F91E47DD1A6CB78C0073AD30 /* GestureSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91E47DC1A6CB78C0073AD30 /* GestureSampleTests.swift */; };
 		F91E47E91A6CD2370073AD30 /* FigureObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91E47E81A6CD2370073AD30 /* FigureObjectManager.swift */; };
 		F91E47EB1A6CD2640073AD30 /* FigureObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91E47EA1A6CD2640073AD30 /* FigureObject.swift */; };
+		F9A44C911A6D9AE40026AE2B /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A44C901A6D9AE40026AE2B /* RectangleView.swift */; };
+		F9A44C951A6D9BB70026AE2B /* EllipseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A44C941A6D9BB70026AE2B /* EllipseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		F91E47DC1A6CB78C0073AD30 /* GestureSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureSampleTests.swift; sourceTree = "<group>"; };
 		F91E47E81A6CD2370073AD30 /* FigureObjectManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FigureObjectManager.swift; sourceTree = "<group>"; };
 		F91E47EA1A6CD2640073AD30 /* FigureObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FigureObject.swift; sourceTree = "<group>"; };
+		F9A44C901A6D9AE40026AE2B /* RectangleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
+		F9A44C941A6D9BB70026AE2B /* EllipseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EllipseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,8 @@
 			children = (
 				F91E47E81A6CD2370073AD30 /* FigureObjectManager.swift */,
 				F91E47EA1A6CD2640073AD30 /* FigureObject.swift */,
+				F9A44C901A6D9AE40026AE2B /* RectangleView.swift */,
+				F9A44C941A6D9BB70026AE2B /* EllipseView.swift */,
 			);
 			name = Figure;
 			sourceTree = "<group>";
@@ -230,7 +236,9 @@
 				F91E47C91A6CB78C0073AD30 /* ViewController.swift in Sources */,
 				F91E47E91A6CD2370073AD30 /* FigureObjectManager.swift in Sources */,
 				F91E47EB1A6CD2640073AD30 /* FigureObject.swift in Sources */,
+				F9A44C951A6D9BB70026AE2B /* EllipseView.swift in Sources */,
 				F91E47C71A6CB78C0073AD30 /* AppDelegate.swift in Sources */,
+				F9A44C911A6D9AE40026AE2B /* RectangleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +438,7 @@
 				F91E47E21A6CB78C0073AD30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F91E47E31A6CB78C0073AD30 /* Build configuration list for PBXNativeTarget "GestureSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +447,7 @@
 				F91E47E51A6CB78C0073AD30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
